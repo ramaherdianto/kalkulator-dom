@@ -1,0 +1,69 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #303841;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.card {
+    background: #303841;
+    backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    background-color: rgba(48, 56, 65, 0.75);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.125);
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card #result {
+    width: 100%;
+    height: 50px;
+    border-radius: 5px;
+    padding: 15px 10px;
+    color: #303841;
+    background: white;
+}
+
+.card__input {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.card__input #num1,
+.card__input #num2 {
+    padding: 15px 10px;
+    color: #303841;
+}
+
+.card__opr {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-top: 30px;
+}
+
+.card__opr #plus,
+.card__opr #min,
+.card__opr #times,
+.card__opr #div {
+    padding: 15px 20px;
+    color: #303841;
+    font-size: 20px;
+    cursor: pointer;
+}
